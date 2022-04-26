@@ -1,0 +1,168 @@
+/*Menu*/
+body{
+    background-image: url("../img/fondo.jpg");
+}
+.container{
+    .menu{
+        padding: 0.1rem;
+        header{
+            nav{
+                ul{
+                    padding: 0.3rem 1rem;
+                }
+            }
+        }
+    }
+}
+
+/*Logo*/
+.container{
+    .logo{
+        height:5rem;
+    }
+}
+
+/*Galeria (index)*/
+/*Clase padre*/
+.parrafo{
+    font-size:0.5rem;
+    text-align: left;
+    margin: 0.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.section{
+	padding: 0.1rem;
+    article{
+        img{
+            height:11rem;
+	        width:100%;
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+        /*Clase hija*/
+        .desc{
+            @extend .parrafo;
+            font-size:0.8rem;
+            text-align:justify;
+        }
+        button{
+            width:100%;
+        }
+    }
+}
+
+/*Carrusel*/
+
+.imagen{
+	height:22rem;
+}
+/*Footer*/
+
+.footer{
+    section{
+        article{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-evenly;
+            align-items:stretch;
+            flex-wrap:wrap;
+            align-content:center;
+            height:100%;
+            width:100%;
+            /*clase hija*/
+            .desc{
+                @extend .parrafo;
+                font-size:0.8rem;
+                text-align:justify;
+            }
+            .icono{
+                height:2rem;
+                width:2rem;
+            }
+            img {
+                height: 3.9rem;
+                width: 3.9rem;
+                padding-top: 0.7rem;
+                animation-name: efecto;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+                animation-duration: 5s;
+                animation-delay: 3s;
+            }
+        }
+    }
+}
+
+/*Ubicación*/
+/*mixins*/
+@mixin sizes($height,$width){
+    height:$height;
+    width:$width;
+}
+/*Maps*/
+$botones:(
+    Galeria:#33c5ff,
+    Contacto:#4FFF33
+);
+
+/*Map-get*/
+$styles:(
+    alto: 2.3rem,
+    borde-redondeado: 0.5rem
+);
+
+.btnContacto{
+    height: map-get($styles,alto);
+    border-radius:map-get($styles,borde-redondeado);
+}
+.btnGaleria{
+    height: map-get($styles,alto);
+    border-radius:map-get($styles,borde-redondeado);
+}
+
+@each $boton,$color in $botones{
+    .btn#{$boton}{
+        background-color:$color;
+    }
+}
+.main{
+    section{
+        article{
+            iframe{
+                @include sizes(27rem,40rem);
+            }
+            img{
+                @include sizes(27rem,40rem);
+            }
+        }
+    }
+}
+
+
+/*Contacto*/
+.btnContacto{
+    width:100%;
+}
+
+@keyframes efecto {
+    0% {
+        @include sizes(3.9rem,3.9rem);
+    }
+    20% {
+        @include sizes(3.6rem,3.6rem);
+    }
+    40% {
+        @include sizes(3.3rem,3.3rem);
+    }
+    60% {
+        @include sizes(3.5rem,3.5rem);
+    }
+    80% {
+        @include sizes(3.7rem,3.7rem);
+    }
+    100% {
+        @include sizes(3.9rem,3.9rem);
+    }
+}
+
