@@ -4,10 +4,16 @@ body{
 }
 .container{
     .menu{
-        padding: 0.1rem;
+        margin-top:0.2rem;
+        margin-bottom:0.2rem;
+        .logo{
+            height: 5.4rem;
+        }
         header{
+            background-image: linear-gradient(to top, #0370c9, #BADAF3);
             nav{
                 ul{
+                   
                     padding: 0.3rem 1rem;
                 }
             }
@@ -18,7 +24,7 @@ body{
 /*Logo*/
 .container{
     .logo{
-        height:5rem;
+        height:5.4rem;
     }
 }
 
@@ -58,16 +64,34 @@ body{
 	height:22rem;
 }
 /*Docentes*/
-.main{
-    .cont__card__div{
+.main__docentes{
+    .main__div{
+        .main__div__div{
+            text-align: justify;
+        }
         img{
-           height: 12rem;
+           height: 15rem;
+           &:hover{
+               height: 15.3rem;
+               border:2px solid ;
+               border-radius: 3rem;
+               border-color: #4FFF33;
+           }
         }
     }
 }
+/*Contacto*/
+.main__contacto{
+    h3{
+        background-color: #33c5ff;
+    }
+}
 /*Footer*/
-
 .footer{
+    .footer__map{
+        background-color: black;
+        margin: 0.5rem 0.5rem;
+    }
     section{
         article{
             display:flex;
@@ -134,14 +158,18 @@ $styles:(
         background-color:$color;
     }
 }
-.main{
+/*Hubicación*/
+.main__ubicacion{
     section{
         article{
+            h5{
+                background-color: #33c5ff;
+            }
             iframe{
-                @include sizes(27rem,40rem);
+                @include sizes(27rem,100%);
             }
             img{
-                @include sizes(27rem,40rem);
+                @include sizes(27rem,100%);
             }
         }
     }
@@ -149,9 +177,17 @@ $styles:(
 
 
 /*Contacto*/
-.btnContacto{
-    width:100%;
+.main__contacto{
+    h3{
+        border-radius: 0.3rem;
+    }
+    form{
+        .btnContacto{
+            width:100%;
+        }
+    }
 }
+
 
 @keyframes efecto {
     0% {

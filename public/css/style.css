@@ -4,13 +4,18 @@ body {
   background-image: url("../img/fondo.jpg"); }
 
 .container .menu {
-  padding: 0.1rem; }
-  .container .menu header nav ul {
-    padding: 0.3rem 1rem; }
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem; }
+  .container .menu .logo {
+    height: 5.4rem; }
+  .container .menu header {
+    background-image: linear-gradient(to top, #0370c9, #BADAF3); }
+    .container .menu header nav ul {
+      padding: 0.3rem 1rem; }
 
 /*Logo*/
 .container .logo {
-  height: 5rem; }
+  height: 5.4rem; }
 
 /*Galeria (index)*/
 /*Clase padre*/
@@ -40,10 +45,26 @@ body {
   height: 22rem; }
 
 /*Docentes*/
-.main .cont__card__div img {
-  height: 12rem; }
+.main__docentes .main__div .main__div__div {
+  text-align: justify; }
+
+.main__docentes .main__div img {
+  height: 15rem; }
+  .main__docentes .main__div img:hover {
+    height: 15.3rem;
+    border: 2px solid;
+    border-radius: 3rem;
+    border-color: #4FFF33; }
+
+/*Contacto*/
+.main__contacto h3 {
+  background-color: #33c5ff; }
 
 /*Footer*/
+.footer .footer__map {
+  background-color: black;
+  margin: 0.5rem 0.5rem; }
+
 .footer section article {
   display: flex;
   flex-direction: row;
@@ -88,16 +109,23 @@ body {
 .btnContacto {
   background-color: #4FFF33; }
 
-.main section article iframe {
-  height: 27rem;
-  width: 40rem; }
+/*Hubicación*/
+.main__ubicacion section article h5 {
+  background-color: #33c5ff; }
 
-.main section article img {
+.main__ubicacion section article iframe {
   height: 27rem;
-  width: 40rem; }
+  width: 100%; }
+
+.main__ubicacion section article img {
+  height: 27rem;
+  width: 100%; }
 
 /*Contacto*/
-.btnContacto {
+.main__contacto h3 {
+  border-radius: 0.3rem; }
+
+.main__contacto form .btnContacto {
   width: 100%; }
 
 @keyframes efecto {
