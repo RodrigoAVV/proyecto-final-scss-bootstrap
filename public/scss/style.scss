@@ -18,7 +18,6 @@ body{
             background-image: linear-gradient(to top, #0370c9, #BADAF3);
             nav{
                 ul{
-                   
                     padding: 0.3rem 1rem;
                 }
             }
@@ -29,7 +28,7 @@ body{
 /*Logo*/
 .container{
     .logo{
-        height:5.4rem;
+        height:100%;
     }
 }
 
@@ -54,7 +53,7 @@ body{
         /*Clase hija*/
         .desc{
             @extend .parrafo;
-            font-size:0.8rem;
+            font-size:1rem;
             text-align:justify;
         }
         button{
@@ -66,7 +65,7 @@ body{
 /*Carrusel*/
 
 .imagen{
-	height:22rem;
+	height:30rem;
 }
 /*Docentes*/
 .main__docentes{
@@ -93,12 +92,28 @@ body{
 }
 /*Footer*/
 .footer{
+    background-image: linear-gradient(to top, #0370c9, #BADAF3);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
     .footer__map{
         background-color: black;
-        width: 100%;
+    }
+    .footer__redes{
+        height: 8rem;
+        border: 1px solid;
+    }
+    .footer__datos{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:stretch;
+        flex-wrap:wrap;
+        align-content:center;
+        
     }
     section{
         article{
+           
             display:flex;
             flex-direction:row;
             justify-content:space-evenly;
@@ -108,11 +123,7 @@ body{
             height:100%;
             width:100%;
             /*clase hija*/
-            .desc{
-                @extend .parrafo;
-                font-size:0.8rem;
-                text-align:justify;
-            }
+            
             .icono{
                 height:2rem;
                 width:2rem;
@@ -219,3 +230,19 @@ $styles:(
     }
 }
 
+@media screen and (max-width:468px){
+    .footer{
+        .footer__redes{
+            height: 5rem;
+        }
+    }
+
+}   
+@media screen and (max-width:768px){
+    .footer{
+        .footer__redes{
+            height: 5rem;
+        }
+    }
+
+}  

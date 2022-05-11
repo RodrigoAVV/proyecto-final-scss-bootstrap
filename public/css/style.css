@@ -20,11 +20,11 @@ body {
 
 /*Logo*/
 .container .logo {
-  height: 5.4rem; }
+  height: 100%; }
 
 /*Galeria (index)*/
 /*Clase padre*/
-.parrafo, .section article .desc, .footer section article .desc {
+.parrafo, .section article .desc {
   font-size: 0.5rem;
   text-align: left;
   margin: 0.5rem;
@@ -40,14 +40,14 @@ body {
       .section article img:hover {
         opacity: 0.9; }
     .section article .desc {
-      font-size: 0.8rem;
+      font-size: 1rem;
       text-align: justify; }
     .section article button {
       width: 100%; }
 
 /*Carrusel*/
 .imagen {
-  height: 22rem; }
+  height: 30rem; }
 
 /*Docentes*/
 .main__docentes .main__div .main__div__div {
@@ -66,35 +66,43 @@ body {
   background-color: #33c5ff; }
 
 /*Footer*/
-.footer .footer__map {
-  background-color: black;
-  width: 100%; }
-
-.footer section article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: stretch;
-  flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
-  width: 100%;
-  /*clase hija*/ }
-  .footer section article .desc {
-    font-size: 0.8rem;
-    text-align: justify; }
-  .footer section article .icono {
-    height: 2rem;
-    width: 2rem; }
-  .footer section article img {
-    height: 3.9rem;
-    width: 3.9rem;
-    padding-top: 0.7rem;
-    animation-name: efecto;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 5s;
-    animation-delay: 3s; }
+.footer {
+  background-image: linear-gradient(to top, #0370c9, #BADAF3);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  .footer .footer__map {
+    background-color: black; }
+  .footer .footer__redes {
+    height: 8rem;
+    border: 1px solid; }
+  .footer .footer__datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: center; }
+  .footer section article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    /*clase hija*/ }
+    .footer section article .icono {
+      height: 2rem;
+      width: 2rem; }
+    .footer section article img {
+      height: 3.9rem;
+      width: 3.9rem;
+      padding-top: 0.7rem;
+      animation-name: efecto;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      animation-duration: 5s;
+      animation-delay: 3s; }
 
 /*Ubicación*/
 /*mixins*/
@@ -156,3 +164,11 @@ body {
   100% {
     height: 3.9rem;
     width: 3.9rem; } }
+
+@media screen and (max-width: 468px) {
+  .footer .footer__redes {
+    height: 5rem; } }
+
+@media screen and (max-width: 768px) {
+  .footer .footer__redes {
+    height: 5rem; } }
