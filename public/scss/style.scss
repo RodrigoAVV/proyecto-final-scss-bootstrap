@@ -1,28 +1,16 @@
+@import "variables";
+@import "footer";
+@import "menu";
+@import "docentes";
+@import "contacto";
+@import "ubicacion";
 /*Menu*/
 body{
     background-image: url("../img/fondo.jpg");
 }
+
 .disclaimer{
     display: none;
-}
-.container{
-    .menu{
-        margin-top:0.2rem;
-        margin-bottom:0.2rem;
-        .logo{
-            height: 5.4rem;
-            display:block;
-            margin:auto;
-        }
-        header{
-            background-image: linear-gradient(to top, #0370c9, #BADAF3);
-            nav{
-                ul{
-                    padding: 0.3rem 1rem;
-                }
-            }
-        }
-    }
 }
 
 /*Logo*/
@@ -67,80 +55,6 @@ body{
 .imagen{
 	height:30rem;
 }
-/*Docentes*/
-.main__docentes{
-    .main__div{
-        .main__div__div{
-            text-align: justify;
-        }
-        img{
-           height: 15rem;
-           &:hover{
-               height: 15.3rem;
-               border-radius: 3rem;
-               border-color: #4FFF33;
-               opacity: 0.9;
-           }
-        }
-    }
-}
-/*Contacto*/
-.main__contacto{
-    h3{
-        background-color: #33c5ff;
-    }
-}
-/*Footer*/
-.footer{
-    background-image: linear-gradient(to top, #0370c9, #BADAF3);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    .footer__map{
-        background-color: black;
-    }
-    .footer__redes{
-        height: 8rem;
-        border: 1px solid;
-    }
-    .footer__datos{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:stretch;
-        flex-wrap:wrap;
-        align-content:center;
-        
-    }
-    section{
-        article{
-           
-            display:flex;
-            flex-direction:row;
-            justify-content:space-evenly;
-            align-items:stretch;
-            flex-wrap:wrap;
-            align-content:center;
-            height:100%;
-            width:100%;
-            /*clase hija*/
-            
-            .icono{
-                height:2rem;
-                width:2rem;
-            }
-            img {
-                height: 3.9rem;
-                width: 3.9rem;
-                padding-top: 0.7rem;
-                animation-name: efecto;
-                animation-iteration-count: infinite;
-                animation-timing-function: ease;
-                animation-duration: 5s;
-                animation-delay: 3s;
-            }
-        }
-    }
-}
 
 /*Ubicación*/
 /*mixins*/
@@ -174,40 +88,6 @@ $styles:(
         background-color:$color;
     }
 }
-/*Hubicación*/
-.main__ubicacion{
-    section{
-        article{
-            h5{
-                background-color: #33c5ff;
-                margin: 0.1rem;
-                text-align: center;
-                border-radius: 0.3rem;
-            }
-            iframe{
-                @include sizes(27rem,100%);
-            }
-            img{
-                @include sizes(27rem,100%);
-            }
-        }
-    }
-}
-
-
-/*Contacto*/
-.main__contacto{
-    h3{
-        border-radius: 0.3rem;
-        text-align: center;
-    }
-    form{
-        .btnContacto{
-            width:100%;
-        }
-    }
-}
-
 
 @keyframes efecto {
     0% {

@@ -1,0 +1,23 @@
+.contacto{
+    h3{
+        text-align: center;
+    }
+   .contacto__form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .caja1{
+            input{
+                width: 20rem;
+            }
+            textarea{
+                height: 5rem;
+            }
+        }
+        .caja2{
+            textarea{
+                width: 30rem;
+            }
+        }
+    }
+}

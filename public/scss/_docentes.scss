@@ -1,0 +1,16 @@
+.main__docentes{
+    .main__div{
+        .main__div__div{
+            text-align: justify;
+        }
+        img{
+           height: 15rem;
+           &:hover{
+               height: 15.3rem;
+               border-radius: 3rem;
+               border-color: #4FFF33;
+               opacity: 0.9;
+           }
+        }
+    }
+}

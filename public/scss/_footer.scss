@@ -1,0 +1,49 @@
+.footer{
+    background-image: linear-gradient(to top, $colorMenu1, $colorMenu2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    .footer__map{
+        background-color: black;
+    }
+    .footer__redes{
+        height: 8rem;
+        border: 1px solid;
+    }
+    .footer__datos{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:stretch;
+        flex-wrap:wrap;
+        align-content:center;
+        
+    }
+    section{
+        article{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-evenly;
+            align-items:stretch;
+            flex-wrap:wrap;
+            align-content:center;
+            height:100%;
+            width:100%;
+            /*clase hija*/
+            
+            .icono{
+                height:2rem;
+                width:2rem;
+            }
+            img {
+                height: 3.9rem;
+                width: 3.9rem;
+                padding-top: 0.7rem;
+                animation-name: efecto;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease;
+                animation-duration: 5s;
+                animation-delay: 3s;
+            }
+        }
+    }
+}

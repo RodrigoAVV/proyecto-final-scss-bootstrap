@@ -61,10 +61,6 @@ body {
     border-color: #4FFF33;
     opacity: 0.9; }
 
-/*Contacto*/
-.main__contacto h3 {
-  background-color: #33c5ff; }
-
 /*Footer*/
 .footer {
   background-image: linear-gradient(to top, #0370c9, #BADAF3);
@@ -138,12 +134,19 @@ body {
   width: 100%; }
 
 /*Contacto*/
-.main__contacto h3 {
-  border-radius: 0.3rem;
+.contacto h3 {
   text-align: center; }
 
-.main__contacto form .btnContacto {
-  width: 100%; }
+.contacto .contacto__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .contacto .contacto__form .caja1 input {
+    width: 20rem; }
+  .contacto .contacto__form .caja1 textarea {
+    height: 5rem; }
+  .contacto .contacto__form .caja2 textarea {
+    width: 30rem; }
 
 @keyframes efecto {
   0% {
