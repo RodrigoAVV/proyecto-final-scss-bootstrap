@@ -1,22 +1,31 @@
 .contacto{
     h3{
         text-align: center;
+        background-color: $colorTitulo;
+        border-radius: 1.5rem;
     }
    .contacto__form{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        .caja1{
-            input{
-                width: 20rem;
-            }
-            textarea{
-                height: 5rem;
+        flex-wrap: wrap;
+        .caja1,.caja2,.caja3{
+            width: 23rem;
+            border: 1px solid;
+        }
+        .caja1,.caja2{
+            input,select{
+                margin: 0.3rem;
+                width: 22rem;
             }
         }
-        .caja2{
-            textarea{
-                width: 30rem;
+        .caja3{
+            textarea,button{
+                margin: 0.3rem;
+                width: 22rem;
+            }
+            button{
+                height: 3rem;
             }
         }
     }

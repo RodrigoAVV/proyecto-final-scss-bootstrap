@@ -1,7 +1,13 @@
 .main__docentes{
     .main__div{
         .main__div__div{
-            text-align: justify;
+            h5{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size: 1.3rem;
+            }
         }
         img{
            height: 15rem;
