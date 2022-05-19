@@ -8,7 +8,13 @@
 body{
     background-image: url("../img/fondo.jpg");
 }
-
+.container{
+    .main_carrusel{
+        .so{
+            color: black;
+        }
+    }
+}
 .disclaimer{
     display: none;
 }
@@ -31,10 +37,11 @@ body{
 .galeria{
     .section{
         padding: 0.1rem;
+        height: 21.5rem;
         article{
-            border: 1px solid;
+            height: 100%;
             img{
-                height:11rem;
+                height:15rem;
                 width:100%;
                 &:hover{
                     opacity: 0.9;
@@ -43,11 +50,13 @@ body{
             /*Clase hija*/
             .desc{
                 @extend .parrafo;
-                font-size:1rem;
+                font-size:1.2rem;
                 text-align:justify;
+                height: 3rem;
             }
             button{
                 width:100%;
+                
             }
         }
     }
@@ -129,7 +138,6 @@ $styles:(
        .contacto__form{
             .caja1,.caja2,.caja3{
                 width: 100%;
-                border: 1px solid;
             }
             .caja1,.caja2{
                 input,select{
@@ -140,7 +148,7 @@ $styles:(
             .caja3{
                 textarea{
                     margin: 0.3rem;
-                    height: 6rem;
+                    height: 4rem;
                     width: 98%;
                 }
                 button{
@@ -152,12 +160,15 @@ $styles:(
             }
         }
     }
-    
-    .footer{
+   .footer{
         .footer__redes{
-            height: 5rem;
+            article{
+                height: 4.6rem;
+                margin-top: 0.3rem;
+            }
+            height: 8rem;
         }
-    }
+   } 
 }  
 
 @media only screen and (max-width:468px){
