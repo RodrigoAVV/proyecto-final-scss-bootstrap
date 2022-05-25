@@ -24,8 +24,7 @@
     flex-wrap: wrap;
     align-content: center;
     height: 100%;
-    width: 100%;
-    /*clase hija*/ }
+    width: 100%; }
     .footer section article .icono {
       height: 2rem;
       width: 2rem; }

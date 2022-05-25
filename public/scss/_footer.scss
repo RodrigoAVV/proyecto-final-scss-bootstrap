@@ -1,7 +1,6 @@
 .footer{
     background-image: linear-gradient(to top, $colorMenu1, $colorMenu2);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
     .footer__map{
         background-color: black;
     }
@@ -32,8 +31,6 @@
             align-content:center;
             height:100%;
             width:100%;
-            /*clase hija*/
-            
             .icono{
                 height:2rem;
                 width:2rem;
